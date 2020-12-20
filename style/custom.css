@@ -79,10 +79,12 @@ header nav a {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    cursor: pointer;
 }
 .btn:hover {
-
+    cursor: pointer;
+}
+.btn:focus {
+    outline: none;
 }
 .btn-1 {
     min-height: 80px;
