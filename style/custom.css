@@ -20,7 +20,7 @@ header {
 .flex-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 header nav {
     margin-top: 30px;
@@ -42,6 +42,7 @@ header nav a {
     margin-top: 30px;
     cursor: pointer;
     letter-spacing: 10px;
+    font-size: 25px;
 }
 
 /* Block1 */
@@ -101,7 +102,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     padding-top: 55px;
-    margin-bottom: 55px;
+    padding-bottom: 55px;
 }
 .tickets_img_left {
     background: url(../images/sec2_pic1.jpg) no-repeat;
@@ -116,6 +117,7 @@ h2 {
 .flex-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .tickets-block h3 {
     text-align: center;
@@ -142,11 +144,107 @@ h4 {
 }
 .btn-2 {
     min-height: 65px;
-    
+    margin-left: 25px; 
 }
 .tickets_text {
     font-size: 22px;
     text-align: center;
     padding: 0px 60px 60px 0px;
     margin: 0 auto;
+}
+
+/* Block3 */
+
+.trajectory-block {
+    background: url(../images/backgrond2.jpg) no-repeat;
+    min-height: 100vh;
+}
+.trajectory-wrap {
+    flex-basis: 50%;
+}
+
+/* Block4 */
+
+.galery-block {
+    background: black;
+    min-height: 100vh;
+}
+.btn-3 {
+    min-height: 65px;
+    justify-content: center;
+    margin: 60px;
+}
+
+/* Block5 */
+
+/* Block6 */
+
+.o-show-block {
+    max-height: 980px;
+    position: relative;
+}
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 980px;
+	height: 240px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+    color: #000;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    line-height: 36px;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-top: 600px;
+}
+.content h2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 900;
+    font-size: 38px;
+}
+.content p {
+    font-size: 25px;
+}
+.content span {
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background: url(../images/background_footer.jpg) no-repeat;
+    min-height: 190px;
+}
+footer h3 {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 900;
+    line-height: 25px;
+}
+footer h3 span {
+    display: block;
+}
+.footer-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
