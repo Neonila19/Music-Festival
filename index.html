@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Music Festival">
     <meta name="keywords" content="Music Festival">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,13 +15,16 @@
     <title>Music Festival</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/59b7b5cd4e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/custom.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="flex-wrap">
+                <label for="menu-check">
+                    <i class="fas fa-bars btn-menu"></i>   
+                </label>
+                <input id="menu-check" type="checkbox">
                 <nav>
                     <ul>
                         <li><a href="#">ingressos</a></li>
@@ -31,10 +34,10 @@
                     </ul>
                 </nav>
                 <div class="icons">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square facebook_hover"></i>
+                    <i class="fab fa-twitter twitter_hover"></i>
+                    <i class="fab fa-youtube youtube_hover"></i>
+                    <i class="fab fa-instagram instagram_hover"></i>
                 </div>
             </div>
         </div>
@@ -43,9 +46,10 @@
         <div class="container">
             <div class="header-box">
                 <h3>Lorem ipsum</h3>
-                <h1>music<span>festival</span></h1>
+                <h1>music</h1>
+                <h1>festival</h1>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
-                <button class="btn btn-1">Lorem ipsum</button>
+                <button class="btn btn-header">Lorem ipsum</button> 
             </div>  
         </div>
     </section>
@@ -56,27 +60,51 @@
                 <div class="tickets_img_left">
                     <h3>Lorem ipsum</h3>
                     <h4><sup><small>$</small></sup>100<sup><small>,00</small></sup></h4>
-                    <button class="btn btn-2">Lorem ipsum</button>
+                    <button class="btn btn-tickets">Lorem ipsum</button>
                     <p><i class="far fa-user"></i>Lorem ipsum dolor sit amet</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit pharetra platea tristique, aliquet netus tortor justo.</p>
                 </div>
                 <div class="tickets_img_right">
                     <h3>Lorem ipsum</h3>
                     <h4><sup><small>$</small></sup>50<sup><small>,00</small></sup></h4>
-                    <button class="btn btn-2">Lorem ipsum</button>
+                    <button class="btn btn-tickets">Lorem ipsum</button>
                     <p><i class="far fa-user"></i>Lorem ipsum dolor sit amet</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit pharetra platea tristique, aliquet netus tortor justo.</p>
                 </div>
             </div>
-            <div class="tickets_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut quod dolorum recusandae? Ullam non, totam inventore architecto harum numquam quas in recusandae vel rerum aut fuga!</div>
+            <div class="tickets_text">Lorem ipsum dolor sit amet consectetur adipiscing elit, tempus primis tortor taciti viverra magna habitasse conubia, aenean laoreet tellus aliquam sollicitudin mollis. Neque mattis mauris himenaeos vestibulum.</div>
         </div>
     </section>
     <section class="trajectory-block">
         <div class="container">
             <div class="flex-container">
+                <div class="trajectory-empty-wrap"></div>
                 <div class="trajectory-wrap">
                     <h2>Trajetória</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit phasellus posuere plaserat, conubia dictum metus.</p>
+                    <p class="text-top">Lorem ipsum dolor sit amet consectetur, adipiscing elit phasellus posuere plaserat, conubia dictum metus.</p>
+                    <div class="timeline-flex">
+                        <div class="timeline-years">
+                            <div class="pair-year-block">
+                                <p>2009</p>
+                                <p>2010</p>
+                            </div>
+                            <div class="pair-year-block">
+                                <p>2014</p>
+                                <p>2015</p>
+                            </div>
+                        </div>
+                        <div class="timeline-img"><img src="./images/timeline.png" alt=""></div>
+                        <div class="timeline-text">
+                            <div class="pair-text-block">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit phasellus posuere placerat, conubia dictum.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, rhoncus quis a tortor suscipit erat, facilisi blandit nascetur imperdiet.</p>
+                            </div>
+                            <div class="pair-text-block">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, rhoncus quis a tortor suscipit erat.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, rhoncus quis a tortor suscipit erat.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,7 +124,7 @@
                 <div><img src="./images/galery9.jpg" alt=""></div>
             </div>
             <div class="flex-container">
-                <button class="btn btn-3">Lorem ipsum</button>
+                <button class="btn btn-galery">Lorem ipsum</button>
             </div>
         </div>
     </section>
@@ -108,7 +136,7 @@
             <div class="content">
                 <h2>o show</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet gravida lobortis, neque ad vivamus auctor parturient et proin nam himenaeos.</p>
-                <div><span>Lorem ipsum dolor sit amet consectetur, adipiscing elit integer ac luctus mi, tellus felis sem justo.</span></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit integer ac luctus mi, tellus felis sem justo.</p>
             </div>
         </div>
     </section>
@@ -117,16 +145,17 @@
             <div class="flex-wrap">
                 <div class="footer-box">
                     <h3>music<span>festival</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit,<span>amet consectetur.</span></p>
                 </div>
                 <div class="icons">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square facebook_hover"></i>
+                    <i class="fab fa-twitter twitter_hover"></i>
+                    <i class="fab fa-youtube youtube_hover"></i>
+                    <i class="fab fa-instagram instagram_hover"></i>
                 </div>    
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/59b7b5cd4e.js" crossorigin="anonymous"></script>
 </body>
 </html>
